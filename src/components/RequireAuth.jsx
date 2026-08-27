@@ -8,7 +8,7 @@ const RequireAuth = () => {
 
   const decoded = auth?.accessToken ? jwtDecode(auth.accessToken) : undefined;
 
-  const admin = decoded?.user.admin || false;
+  const admin = decoded?.admin || false;
 
   return auth?.accessToken && admin ? (
     <Outlet />
