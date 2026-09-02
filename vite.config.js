@@ -11,6 +11,7 @@ export default defineConfig({
   },
   server: {
     host: true,
+    allowedHosts: ['struggle-luster-delta.ngrok-free.dev'],
     port: 3001,
   },
 });
